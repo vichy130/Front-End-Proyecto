@@ -1,0 +1,134 @@
+/*reglas generales*/
+* {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Raleway;
+    line-height: 1.5em;
+  }
+
+/* GRID*/
+.grid-container {
+  display: grid;
+  gap: .4em;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 25rem;
+  min-height: 100vh; /* Permite utilizar toda la pantalla, footer */
+  
+}
+.grid-item{
+  background-color: #fdfef8;
+  box-shadow:  .1em .1em rgb(244, 243, 237);
+}
+.grid-container-productos{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 20rem 40rem 35rem;
+}
+.productos, .productos1, .grid-container-productos2-3, .grid-container-productos4-5-6{
+  grid-column: span 6;
+}
+.grid-container-productos1{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.imagen-productos1{
+  grid-column: span 2;
+}
+.grid-container-productos2-3{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-container-productos4-5-6{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.productos2, .productos3{
+  display:grid;
+  grid-template-rows: 20rem 20rem;
+}
+.productos4, .productos5, .productos6{
+  display:grid;
+  grid-template-rows: 15rem 20rem;
+}
+
+/*nav*/
+.nav ul {
+  display:flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.nav li{
+  flex:auto;
+}
+.nav a{
+  text-decoration: none; 
+  color: black;
+}
+/*Media Query*/
+
+/** Reescribir colores */
+.color{
+  color: #037BC0;
+}
+.grid-container-productos1, .grid-container-productos2-3, .grid-container-productos4-5-6{
+  background-color: rgb(43, 101, 167);
+  color:#fdfef8;
+}
+/*hero*/
+.hero{
+  background-image: url("principal.jpg");
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+/** Productos */
+button{
+  background-color:rgb(20, 142, 20);
+  padding:6px;
+}
+
+h1, h2, h3{
+  font-family: Playfair;
+}
+h1{
+  font-size: 2.5rem;
+}
+h2{
+  font-size:2rem ;
+}
+h3{
+  font-size: 1.5rem;
+}
+
+/*images*/
+.imagen-productos2{
+  background-image: url("producto2.jpg");
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.imagen-productos3{
+  background-image: url("producto3.jpg");
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.imagen-productos4{
+  background-image: url("producto4.jpg");
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.imagen-productos5{
+  background-image: url("producto5.jpg");
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.imagen-productos6{
+  background-image: url("producto6.jpg");
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
