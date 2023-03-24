@@ -7,7 +7,7 @@
   }
 
 /* GRID*/
-.grid-container {monitormommm
+.grid-container {
   display: grid;
   gap: .4em;
   grid-template-columns: 1fr;
@@ -53,6 +53,17 @@
 footer{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-container-categorias{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.categorias{
+  grid-column: span 3;
+}
+.categoria1, .categoria2, .categoria3{
+  display:grid;
+  grid-template-rows: 10rem 5rem;
 }
 /*nav*/
 .nav ul {
@@ -134,4 +145,22 @@ h3{
   background-position: center center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+}
+.imagen-categorias1{
+  background-image: url("categoria1.jpg");
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.imagen-categorias2{
+  background-image: url("categoria2.jpg");
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.imagen-categorias3{
+  background-image: url("categoria3.jpg");
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }
