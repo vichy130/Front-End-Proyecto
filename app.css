@@ -7,7 +7,7 @@
   }
 
 /* GRID*/
-.grid-container {
+.grid-container {monitormommm
   display: grid;
   gap: .4em;
   grid-template-columns: 1fr;
@@ -50,7 +50,10 @@
   display:grid;
   grid-template-rows: 15rem 20rem;
 }
-
+footer{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 /*nav*/
 .nav ul {
   display:flex;
