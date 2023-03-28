@@ -37,6 +37,9 @@
     grid-column: span 1;
   }
 
+  .productos1{
+    grid-template-rows: 18rem;
+  }
   .productos2, .productos3{
     grid-template-rows: 20rem 12rem;
   }
