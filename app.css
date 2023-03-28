@@ -4,16 +4,18 @@
     text-align: center;
     font-family: Raleway;
     line-height: 1.5em;
+    margin:0;
+    padding:0;
   }
 
 /* GRID*/
 .grid-container {
   display: grid;
-  gap: .4em;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 25rem;
   min-height: 100vh; /* Permite utilizar toda la pantalla, footer */
-  
+  justify-self:center;
+
 }
 .grid-item{
   background-color: #fdfef8;
@@ -23,6 +25,9 @@
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto 20rem 40rem 35rem;
+  grid-gap:1rem;
+  width:90%;
+  justify-self: center;
 }
 .productos, .productos1, .grid-container-productos2-3, .grid-container-productos4-5-6{
   grid-column: span 6;
@@ -30,33 +35,40 @@
 .grid-container-productos1{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
-.imagen-productos1{
-  grid-column: span 2;
+  border-radius: .5rem;
 }
 .grid-container-productos2-3{
   display:grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap:1rem;
 }
 .grid-container-productos4-5-6{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:1rem;
 }
 .productos2, .productos3{
   display:grid;
   grid-template-rows: 20rem 20rem;
+  border-radius: .5rem;
 }
 .productos4, .productos5, .productos6{
   display:grid;
   grid-template-rows: 15rem 20rem;
+  border-radius: .5rem;
 }
 footer{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
+  width:90%;
+  justify-self: center;
 }
 .grid-container-categorias{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:.6rem;
+  width:90%;
+  justify-self: center;
 }
 .categorias{
   grid-column: span 3;
@@ -64,6 +76,7 @@ footer{
 .categoria1, .categoria2, .categoria3{
   display:grid;
   grid-template-rows: 10rem 5rem;
+  border-radius: .5rem;
 }
 /*nav*/
 .nav ul {
@@ -84,7 +97,7 @@ footer{
 .color{
   color: #037BC0;
 }
-.grid-container-productos1, .grid-container-productos2-3, .grid-container-productos4-5-6{
+.grid-container-productos1, .productos2, .productos3, .productos4, .productos5, .productos6{
   background-color: rgb(43, 101, 167);
   color:#fdfef8;
 }
@@ -98,7 +111,7 @@ footer{
 }
 /** Productos */
 button{
-  background-color:rgb(20, 142, 20);
+  background-color:#8cbc00;
   padding:6px;
 }
 
@@ -116,51 +129,67 @@ h3{
 }
 
 /*images*/
+.imagen-productos1{
+  grid-column: span 2;
+  background-image: url("producto1.jpg");
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  border-radius: .5rem;
+}
 .imagen-productos2{
   background-image: url("producto2.jpg");
   background-position: center center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+  border-radius: .5rem;
 }
 .imagen-productos3{
   background-image: url("producto3.jpg");
   background-position: center center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+  border-radius: .5rem;
 }
 .imagen-productos4{
   background-image: url("producto4.jpg");
   background-position: center center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+  border-radius: .5rem;
 }
 .imagen-productos5{
   background-image: url("producto5.jpg");
   background-position: center center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+  border-radius: .5rem;
 }
 .imagen-productos6{
   background-image: url("producto6.jpg");
   background-position: center center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+  border-radius: .5rem;
 }
 .imagen-categorias1{
   background-image: url("categoria1.jpg");
   background-position: center center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  border-radius: .5rem;
 }
 .imagen-categorias2{
   background-image: url("categoria2.jpg");
   background-position: center center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  border-radius: .5rem;
 }
 .imagen-categorias3{
   background-image: url("categoria3.jpg");
   background-position: center center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  border-radius: .5rem;
 }
