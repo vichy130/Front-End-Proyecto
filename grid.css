@@ -9,7 +9,7 @@
   .grid-container-productos{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto 20rem 40rem 35rem;
+    grid-template-rows: auto 20rem 40rem 35rem ;
     grid-gap:1rem;
     width:90%;
     justify-self: center;
